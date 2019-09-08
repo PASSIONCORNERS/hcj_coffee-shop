@@ -473,6 +473,29 @@ Hero Section
 	transition: all .4s ease-in;	
 }
 
+/*Media Query Mixins*/
+
+@media (min-width: 576px) {
+  }
+
+@media (min-width: 768px) {
+.hero_content {
+	transform: translate( 10%, -30%);
+}
+  }
+
+@media (min-width: 992px) {
+.hero_content {
+	transform: translate( 10%, -30%);
+}
+  }
+
+@media (min-width: 1200px) {
+.hero_content {
+	transform: translate( 50%, -30%);
+}
+  }
+
 /*----------------
 About Section
 ----------------*/
@@ -951,6 +974,10 @@ Menu Section
 .testimonial {
 	padding: 75px 0 75px 0;
 }
+}
+
+.location {
+	margin-bottom: 20px;
 }
 
 .location-title {

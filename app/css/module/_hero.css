@@ -54,3 +54,23 @@ Hero Section
 	transition: all .4s ease-in;	
 }
 
+/*Media Query Mixins*/
+
+@mixin at576 {
+
+}
+@mixin at768 {
+.hero_content {
+	transform: translate( 10%, -30%);
+}
+}
+@mixin at992 {
+.hero_content {
+	transform: translate( 10%, -30%);
+}
+}
+@mixin at1200 {
+.hero_content {
+	transform: translate( 50%, -30%);
+}
+}
