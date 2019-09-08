@@ -1,0 +1,157 @@
+.location {
+	&-title {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		font-family: 'Playfair Display', serif;
+		font-size: 2.5rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin: 80px 0;
+	}
+	&-content {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+}
+
+.location-left {
+	background: $mainYellow;
+	height: 60vh;
+	width: 100%;		
+	grid-column: 1/13 ;
+	position: relative;	
+		
+		@mixin at992 {
+			grid-column: 1/5 ;
+		}
+		@mixin at1200 {
+			grid-column: 1/5 ;
+		}
+	&-content {
+		position: absolute;
+		top: 50%;
+		left: 10%;
+		width: 100%;
+		height: 60vh;
+		transform: translateY(-40%);
+		color: #000;
+		}
+	&-address {
+		margin-bottom: 40px;
+	}	
+	&-address h1{
+		font-family: 'Playfair Display', serif;
+		font-size: 2rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}	
+	&-address p {
+		font-family: 'Lato', sans-serif;
+	    font-size: 1rem;
+	    line-height: 1.8;
+	    max-width: 400px;
+	    padding-right: 40px;
+	}
+	&-hours {
+		margin-bottom: 40px;	
+	}
+	&-hours h1{
+		font-family: 'Playfair Display', serif;
+		font-size: 2rem;
+		font-weight: 600;
+		text-transform: uppercase;		
+	}
+	&-hours ul {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+
+		font-family: 'Lato', sans-serif;
+	    font-size: 1rem;
+	    line-height: 1.8;
+	    max-width: 400px;
+	    padding-right: 40px;
+	}
+	&-hours li {
+		list-style: none;
+	}
+	&-time li{
+		padding-left: 50px;
+	}
+	&-happy h1 {
+		font-family: 'Playfair Display', serif;
+		font-size: 2rem;
+		font-weight: 600;
+		text-transform: uppercase;		
+	}
+	&-happy ul {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+
+		font-family: 'Lato', sans-serif;
+	    font-size: 1rem;
+	    line-height: 1.8;
+	    max-width: 400px;
+	    padding-right: 40px;		
+	}
+	&-happy li {
+		list-style: none;		
+	}
+	&-happy-time li {
+		padding-left: 50px;
+	}
+}
+
+.location-right {
+	background: lightblue;
+	height: 60vh;
+	width: 100%;
+	grid-column: 1/13;
+	position: relative;
+		
+		@mixin at992 {
+			grid-column: 5/13 ;
+		}
+		@mixin at1200 {
+			grid-column: 5/13 ;
+		}		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
