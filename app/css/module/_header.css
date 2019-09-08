@@ -1,0 +1,246 @@
+/*----------------
+Navigation
+----------------*/
+
+.main_nav {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	min-height: 10.2vh;
+	background-color: rgba(0, 0, 0, .35);
+	font-family: 'Playfair Display', serif;
+	width: 100%;	
+	z-index: 1;
+
+	&-logo {
+		position: absolute;	
+		margin-top: 5px;
+	}
+
+	& ul{
+
+	}
+
+	& li{
+		list-style: none;
+		color: #fff;
+		margin-right: 50px;
+		visibility: visible;
+
+		@mixin at576 {
+
+		}
+		@mixin at768 {
+			visibility: visible;
+		}
+		@mixin at992 {
+			visibility: visible;
+		}
+		@mixin at1200 {
+			visibility: visible;
+		}
+	}
+}	
+
+.main_nav-ul {
+/*		display: flex;
+		justify-content: center;
+		align-content: center;	
+		position: relative;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translateY(50%);*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		height: 92vh;
+		top: 8.6vh;
+		width: 50%;
+		right: 0px;
+		background-color: rgba(0, 0, 0, .65);
+		transform: translateX(100%);
+		transition: transform .4s ease-in;
+
+	& li {
+		margin-top: 30px;
+	}
+
+	& a {
+		color: $mainYellow;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	& a:hover {
+		color: #fff;
+		transition: .2s ease-in;
+	}
+}
+.nav-left {
+	transform: translateY(100%);
+}
+.nav-left li {
+	display: block;
+}
+.nav-right {
+	transform: translate(19%, 70%);
+}
+.nav-right li {
+	display: block;
+}
+
+/*--active--*/
+.nav-active {
+	transform: translateX(0);
+}
+
+/*Burger Menu*/
+.main_nav-burger {
+	cursor: pointer;
+	margin: 30px 5px 0 0;
+	visibility: visible;
+	transform: translateX(590%);
+	
+	& div {
+		z-index: 77;
+		width: 25px;
+		height: 5px;
+		background-color: rgba(255, 204, 102, .7);
+		margin: 5px 5px 5px 5px;
+	}
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+	
+.main_nav-burger {
+	margin: 30px 5px 0 0;
+	visibility: visible;
+	transform: translate(490%, -30%);
+}
+.main_nav-logo {
+	transform: translateY(-19%) scale(.62);
+}
+
+}
+
+/*Media Query Mixins*/
+
+@mixin at576 {
+	
+.nav-right {
+	transform: translateX(45%);
+}
+}
+@mixin at768 {
+		
+.main_nav-burger {
+	visibility: hidden;
+}	
+header {
+	background-color: rgba(0, 0, 0, .35);
+
+}	
+.main_nav {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	min-height: 10.2vh;
+	background-color: rgba(0, 0, 0, .35);
+	font-family: 'Playfair Display', serif;
+	width: 150%;	
+	z-index: 1;
+	transform: translateX(-23%);
+}
+}
+@mixin at992 {
+		
+.main_nav-burger {
+	visibility: hidden;
+}	
+.main_nav {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	min-height: 10.2vh;
+	background-color: rgba(0, 0, 0, .35);
+	font-family: 'Playfair Display', serif;
+	width: 100%;	
+	z-index: 1;
+	transform: translateX(0);
+}
+}
+@mixin at1200 {
+.nav-left {
+	transform: translateY(0);
+}	
+.main_nav-ul {
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		align-content: center;	
+		position: relative;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translate(0, 50%);
+		background-color: transparent;
+
+	
+	& li {
+		margin-top: 0;
+	}
+
+	& a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	& a:hover {
+		color: $mainYellow;
+		transition: .2s ease-in;
+	}
+}
+.nav-left {
+	transform: translateY(0);
+}
+.nav-left li {
+	display: inline-block;
+}
+.nav-right {
+	transform: translateX(55%);
+}
+.nav-right li {
+	display: inline-block;
+}
+.main_nav-burger {
+	visibility: hidden;
+}	
+.main_nav {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	min-height: 10.2vh;
+	background-color: rgba(0, 0, 0, .35);
+	font-family: 'Playfair Display', serif;
+	width: 100%;	
+	z-index: 1;
+	transform: translateX(0);
+}
+}

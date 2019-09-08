@@ -1,10 +1,10 @@
 @import "normalize.css";
 @import "./module/_global.css";
 @import "./module/_mixins.css";
-@import "./module/_nav.css";
 @import "./module/_hero.css";
 @import "./module/_about.css";
 @import "./module/_menu.css";
 @import "./module/_test.css";
 @import "./module/_location.css";
 @import "./module/_footer.css";
+@import "./module/_header.css";

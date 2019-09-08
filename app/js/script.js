@@ -32,11 +32,19 @@ toggle between hiding and showing the dropdown content */
 //   }
 // }
 
+// -------------Nav Slider--------------
+let navSlide = ()=> {
+    let burger = document.querySelector('.main_nav-burger');
+    let nav = document.querySelector('.main_nav-ul');
 
+    burger.addEventListener('click', ()=> {
+        nav.classList.toggle('nav-active');
+    })
+}
 
+navSlide();
 
-
-// -------------New Slider--------------
+// -------------Testimonial Slider--------------
 
 $(document).ready(function(){
     $("#testimonial-slider").owlCarousel({
@@ -53,6 +61,7 @@ $(document).ready(function(){
         autoPlay:true
     });
 });
+
 
 
 
