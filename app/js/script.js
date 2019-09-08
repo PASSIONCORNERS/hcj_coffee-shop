@@ -1,38 +1,4 @@
-// let logo = document.getElementById("logo");
-
-// function afterClick() {
-// 	this.classList.toggle("done");
-// }
-
-// logo.addEventListener("click", afterClick);
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-// function myFunction() {
-//   document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-// // Close the dropdown if the user clicks outside of it
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
-
-// -------------Nav Slider--------------
+// -------------Nav Hamburger--------------
 let navSlide = ()=> {
     let burger = document.querySelector('.main_nav-burger');
     let nav = document.querySelector('.main_nav-ul');
@@ -62,7 +28,10 @@ $(document).ready(function(){
     });
 });
 
-
+// -------------Smooth Scroll--------------
+var scroll = new SmoothScroll('.main_nav a[href*="#"]', {
+    speed: 800
+});
 
 
 

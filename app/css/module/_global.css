@@ -1,6 +1,10 @@
 $mainYellow: #ffcc66;
 $mainBrown: #39312F;
 
+body {
+	height: 100vh;
+}
+
 .container {
 	overflow: hidden;
   	padding-left: 18px;
@@ -8,4 +12,5 @@ $mainBrown: #39312F;
   	max-width: 1850px;
   	margin-left: auto;
   	margin-right: auto;
+
 }
