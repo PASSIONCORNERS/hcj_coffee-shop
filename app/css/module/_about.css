@@ -1,0 +1,31 @@
+/*----------------
+About Section
+----------------*/
+.about {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 100px;
+}
+.about-title {
+	font-family: 'Playfair Display', serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+.about-title span{
+	font-weight: 600;
+	border-bottom: 2px solid #000;
+}
+.about-desc {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 2;
+	letter-spacing: 1.8;
+	margin-top: 40px;
+	max-width: 1000px;
+}
+.about-icon {
+	margin-top: 80px;
+}

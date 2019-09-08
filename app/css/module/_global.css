@@ -1,0 +1,11 @@
+$mainYellow: #ffcc66;
+$mainBrown: #39312F;
+
+.container {
+	overflow: hidden;
+  	padding-left: 18px;
+  	padding-right: 18px;
+  	max-width: 1850px;
+  	margin-left: auto;
+  	margin-right: auto;
+}

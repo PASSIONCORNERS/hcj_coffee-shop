@@ -1,0 +1,14 @@
+/*----------------
+Navigation
+----------------*/
+.main_nav {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	min-height: 8vh;
+	background-color: rgba(0, 0, 0, .35);
+	font-family: 'Playfair Display', serif;
+	width: 100%;	
+	z-index: 1;
+}	

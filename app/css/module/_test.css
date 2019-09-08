@@ -1,0 +1,232 @@
+/*--------------------------------
+		Testimonials
+--------------------------------*/
+.test {
+	&-title {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		font-family: 'Playfair Display', serif;
+		font-size: 2.5rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin: 80px 0;
+	}
+
+	&_content {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+	&_content-left {
+		background-position: center center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+		background-image: url('../images/testimonials-left.png');
+		height: 60vh;
+		width: 100%;
+		grid-column: 1/13 ;
+		
+		@mixin at992 {
+			grid-column: 1/9 ;
+		}
+		@mixin at1200 {
+			grid-column: 1/9 ;
+		}		
+	}
+	&_content-left img {
+		width: 100%;
+		height: 100%;
+
+	}
+	&_content-right {
+		background: $mainBrown;
+		height: 60vh;
+		width: 100%;
+		grid-column: 1/13;
+		position: relative;
+		
+		@mixin at992 {
+			grid-column: 9/13 ;
+		}
+		@mixin at1200 {
+			grid-column: 9/13 ;
+		}
+	}
+}
+
+/*Media Query Mixins*/
+
+@mixin at576 {
+
+}
+@mixin at768 {
+
+}
+@mixin at992 {
+
+}
+
+@mixin at1200 {
+
+}
+
+/*--------------------------------
+		Testimonials Slider
+--------------------------------*/
+
+
+/*---------New Slider------------*/
+.row {
+	transform: translateY(25%);
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.testimonial{
+    text-align: center;
+}
+.number{
+	position: absolute;
+	font-family: 'Playfair Display', serif;
+	font-size: 4rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, .03);
+	transform: translate(10%, -90%);
+}
+.quote {
+	transform: translate( 35%, 640%) scale(1);
+}
+.testimonial .pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.testimonial .testimonial-title{
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $mainYellow;
+    margin: 0 auto 70px auto;
+}
+.testimonial .testimonial-title small{
+    font-size: 15px;
+    font-weight: 600;
+    color: #787878;
+}
+.testimonial .description{
+	font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 27px;
+    position: relative;
+    margin: -50px auto 50px auto;
+    max-width: 300px;
+}
+
+.owl-theme .owl-controls .owl-page span{
+    background: #fff!important;
+    /*border: 2px solid #0c4767;*/
+    opacity: 1!important;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span{
+    border: 2px solid #fff;
+    background: transparent!important;
+}
+
+/*Media Query Mixins*/
+
+@mixin at576 {
+.quote {
+	transform: translate( 35%, 640%) scale(1);
+}
+}
+@mixin at768 {
+.quote {
+	transform: translate( 35%, 640%) scale(1);
+}
+}
+@mixin at992 {
+.quote {
+	transform: translate( 35%, 640%) scale(1);
+}
+}
+
+@mixin at1200 {
+.row {
+	transform: translateY(-5%);
+	padding: 75px 15px 75px 15px;
+}
+.number{
+	position: absolute;
+	font-family: 'Playfair Display', serif;
+	font-size: 7rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, .03);
+	transform: translate(0, -150%);
+}
+.quote {
+	transform: translate( 40%, 590%) scale(1);
+}
+.testimonial .description{
+	font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 27px;
+    position: relative;
+    margin: -50px auto -25px auto;
+    max-width: 400px;
+}
+.testimonial {
+	padding: 75px 0 75px 0;
+}
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+.row {
+	transform: translateY(-20%) scale(.7);
+	padding: 40px 15px 40px 15px;
+}
+.number{
+	position: absolute;
+	font-family: 'Playfair Display', serif;
+	font-size: 7rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, .03);
+	transform: translate(-5%, -130%);
+}
+.quote {
+	transform: translate( 35%, 600%) scale(1);
+}
+.testimonial .description{
+	font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 27px;
+    position: relative;
+    margin: -50px auto -55px auto;
+    max-width: 400px;
+}
+.testimonial {
+	padding: 75px 0 75px 0;
+}
+}
+
+
+
+
+

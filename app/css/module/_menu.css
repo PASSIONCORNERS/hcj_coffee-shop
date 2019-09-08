@@ -1,0 +1,176 @@
+
+/*----------------
+Menu Section
+----------------*/
+.menu-title {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 80px 0;
+}
+.menu-cards {
+	display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+}
+.menu-cards-1 {
+	position: relative;
+	background-color: transparent;
+}
+.menu-cards-fade {
+	position: relative;
+}
+.menu-cards-fade::after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background:rgba(255, 204, 102, .6);
+    opacity: 0;
+    transition: all 0.4s;
+}
+.menu-cards-fade:hover:after {
+	opacity: 1;
+	z-index: 5;
+}
+
+.menu-cards img {
+	width: 100%;
+}
+.menu-cards-title {
+	position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-45%);
+
+	font-family: 'Playfair Display', serif;
+	font-size: 2.3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	z-index: 1;
+}
+.menu-cards-content {
+	display: flex;
+	justify-content: space-around;
+	height: 20vh;
+	margin-top: 30px;
+	transform: translateX(-25px);
+}
+.menu-cards-content li {
+	list-style: none;
+}
+.menu-cards-item {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 2;
+	letter-spacing: 1.8;
+}
+.menu-cards-price {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 2;
+	letter-spacing: 1.8;
+}
+.menu-cards-2 {
+	position: relative;
+	background-color: transparent;
+}
+.menu-cards-3 {
+	position: relative;
+	background-color: transparent;
+}
+.menu-btn-center {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.menu-btn {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	background: transparent;
+	border: 2px solid #000;
+	padding: 15px 50px;
+	margin-top: 25px;
+	cursor: pointer;	
+}
+.menu-btn:hover {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	background: #ffcc66;
+	border: 2px solid #000;
+	padding: 15px 50px;
+	transition: all .4s ease-in;	
+}
+.menu-icon {
+	margin-top: 100px;
+	text-align: center;
+}
+
+/*Media Query Mixins*/
+
+@mixin at576 {
+
+}
+@mixin at768 {
+
+}
+@mixin at992 {
+.menu-cards {
+	display: grid;
+	grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+}
+}
+
+@mixin at1200 {
+.menu-cards-title {
+	position: absolute;
+    top: 28%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-40%);
+
+	font-family: 'Playfair Display', serif;
+	font-size: 3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	z-index: 1;
+}
+.menu-cards {
+	display: grid;
+	grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr) );
+}
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+.menu-cards {
+	margin-bottom: 50px;
+}	
+}
+
+
+
+
+
+
