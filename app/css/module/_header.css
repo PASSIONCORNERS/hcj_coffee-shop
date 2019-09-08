@@ -121,7 +121,9 @@ Navigation
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-	
+.main_nav-ul {
+	top: 7.8vh;
+}	
 .main_nav-burger {
 	margin: 30px 5px 0 0;
 	visibility: visible;
@@ -136,20 +138,62 @@ Navigation
 /*Media Query Mixins*/
 
 @mixin at576 {
+.main_nav-burger {
+	margin: 30px 5px 0 0;
+	visibility: visible;
+	transform: translate(780%, 0);
+}
+/*.nav-right {
+	transform: translateX(45%);
+}*/
+}
+@mixin at768 {
+.main_nav-ul {
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		align-content: center;	
+		position: relative;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translate(0, 50%);
+		background-color: transparent;
+
 	
+	& li {
+		margin-top: 0;
+	}
+
+	& a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	& a:hover {
+		color: $mainYellow;
+		transition: .2s ease-in;
+	}
+}
+.nav-left {
+	transform: translateY(0);
+}
+.nav-left li {
+	display: inline-block;
+}
 .nav-right {
 	transform: translateX(45%);
 }
-}
-@mixin at768 {
-		
+.nav-right li {
+	display: inline-block;
+}		
 .main_nav-burger {
 	visibility: hidden;
-}	
-header {
-	background-color: rgba(0, 0, 0, .35);
-
-}	
+}		
 .main_nav {
 	position: fixed;
 	display: flex;
@@ -164,7 +208,49 @@ header {
 }
 }
 @mixin at992 {
-		
+.main_nav-ul {
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		align-content: center;	
+		position: relative;
+		top: 50%;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		transform: translate(0, 50%);
+		background-color: transparent;
+
+	
+	& li {
+		margin-top: 0;
+	}
+
+	& a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	& a:hover {
+		color: $mainYellow;
+		transition: .2s ease-in;
+	}
+}
+.nav-left {
+	transform: translateY(0);
+}
+.nav-left li {
+	display: inline-block;
+}
+.nav-right {
+	transform: translateX(55%);
+}
+.nav-right li {
+	display: inline-block;
+}	
 .main_nav-burger {
 	visibility: hidden;
 }	
