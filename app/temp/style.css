@@ -1115,3 +1115,74 @@ Menu Section
 }
 
 }
+
+footer {
+	background-color: #39312F;
+	height: 35vh;
+	position: relative;
+}
+
+.footer-content {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	transform: translateY(-40%);
+}
+
+.footer-content-social {
+		color: #fff;
+		cursor: pointer;
+	}
+
+.footer-content-social i {
+		font-size: 2rem;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-bottom: 10px;
+	}
+
+.footer-content-social i:hover {
+		color: #ffcc66;
+		transition: .3s ease-in;
+	}
+
+.footer-content-info {
+		font-family: 'Lato', sans-serif;
+	    font-size: 1rem;
+	    line-height: 1.8;
+	    color: #fff;
+	    padding-top: 20px;
+	}
+
+.footer-content-info p{
+		margin-bottom: 0;
+	}
+
+.footer-content-info span {
+		color: #ffcc66;
+		font-size: .9rem;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+	
+.footer-content {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	transform: translateY(-50%) scale(.8);
+	}
+}
